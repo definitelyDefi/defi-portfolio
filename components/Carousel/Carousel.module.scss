@@ -1,0 +1,95 @@
+.carousel {
+  &__navigation {
+    margin-top: 60px;
+    width: 90%;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    align-items: center;
+    &_arrowLeft,
+    &_arrowRight {
+      display: flex;
+      width: 64px;
+      height: 64px;
+      padding: 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      background: #f59e0b;
+      border: none;
+      cursor: pointer;
+    }
+    &_disabledArrow {
+      user-select: none;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+  &__title {
+    color: #111827;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 82px;
+  }
+  &__body {
+    &_title {
+      color: #111827;
+      margin-bottom: 0;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &_links {
+      display: flex;
+      margin-top: 15px;
+      gap: 15px;
+      & > a {
+        color: #111827;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    }
+    &_tags {
+      display: flex;
+      gap: 10px;
+      &__tag {
+        padding: 8px 16px;
+        border-radius: 32px;
+      }
+      &__tag:nth-child(5n + 1) {
+        background-color: #f43f5e;
+        color: white;
+      }
+
+      &__tag:nth-child(5n + 2) {
+        background-color: #00ff00;
+        color: white;
+      }
+
+      &__tag:nth-child(5n + 3) {
+        background-color: #000000;
+        color: white;
+      }
+
+      &__tag:nth-child(5n + 4) {
+        background-color: #ffff00;
+        color: white;
+      }
+
+      &__tag:nth-child(5n + 5) {
+        background-color: #800080;
+        color: white;
+      }
+    }
+  }
+}

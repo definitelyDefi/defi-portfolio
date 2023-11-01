@@ -1,0 +1,187 @@
+.logoLink {
+  color: #111827;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  text-decoration: none;
+}
+.logo {
+  display: flex;
+  gap: 20px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  margin-top: 50px;
+  display: flex;
+  gap: 250px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+}
+.introduce {
+  display: flex;
+  padding: 38px 130px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 44px;
+  background: linear-gradient(111deg, #fbed96 0%, #abecd6 100%);
+  box-shadow: 0px 23px 30px 0px rgba(171, 236, 214, 0.2), 0px 4px 12px 0px rgba(0, 0, 0, 0.1);
+}
+.introduce h3 {
+  color: #111827;
+  margin: 0;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -2.64px;
+}
+.introduce p {
+  position: relative;
+  margin-top: 0;
+  color: #111827;
+  text-align: center;
+
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 118.6%;
+}
+.introduceButtons {
+  display: flex;
+  gap: 50px;
+}
+.introduceButtons a:first-child {
+  padding: 8px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 32px;
+  background: #111827;
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.introduceButtons a:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 4px;
+  color: #111827;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.flexAbout {
+}
+.about {
+  margin-bottom: 150px;
+  display: flex;
+  /* gap: 0px; */
+  /* align-items: center; */
+}
+.aboutDescription {
+  width: 498px;
+  color: #111827;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-left: 5px solid #111827;
+  padding-left: 20px;
+}
+
+.about h1 {
+  color: #111827;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 82px;
+}
+
+.projects {
+  margin-bottom: 50px;
+}
+.about h2 {
+  color: #111827;
+
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  gap: 35px;
+}
+.footer {
+  display: flex;
+  /* width: 100%; */
+  padding: 80px 300px;
+  margin: 0;
+  align-items: center;
+  gap: 64px;
+  border-radius: 48px 48px 0px 0px;
+  background: #111827;
+
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.contacts {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+.footer h1 {
+  color: #fff;
+
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 82px; /* 89.13% */
+}
+.footer p {
+  color: #fff;
+
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 28px */
+}
+.email {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  padding-bottom: 1px;
+  text-decoration: none;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
