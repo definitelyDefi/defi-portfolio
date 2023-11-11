@@ -1,0 +1,114 @@
+.modal {
+  width: 1000px;
+  height: 600px;
+  background: white;
+  border: 1px solid #ccc;
+
+  position: fixed;
+  z-index: 3;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  &__closeButton {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    transition: 0.2s all ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  h1 {
+    color: black;
+
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 82px; /* 89.13% */
+  }
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  p {
+    color: #fff;
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 28px */
+  }
+  &__content {
+    &_email {
+      border-bottom: 2px solid black;
+      color: black;
+      padding-bottom: 1px;
+      text-decoration: none;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      margin-bottom: 15px;
+    }
+    &_contacts {
+      display: flex;
+      gap: 15px;
+      margin-top: 25px;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .modal {
+    max-width: 90%;
+    height: 50vh;
+    padding: 10px;
+    border: 1px solid black;
+
+    &__closeButton {
+      left: 15px;
+      top: 15px;
+    }
+    h1 {
+      color: black;
+
+      font-size: 35px;
+    }
+    &__content {
+      &_email {
+        border-bottom: 2px solid black;
+        color: black;
+        padding-bottom: 1px;
+        text-decoration: none;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 15px;
+      }
+      &_contacts {
+        display: flex;
+        gap: 15px;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .modal {
+    max-width: 90%;
+    height: 60vh;
+    padding: 10px;
+    border: 1px solid black;
+    top: 200px;
+  }
+}

@@ -1,0 +1,93 @@
+.introduce {
+  display: flex;
+  padding: 38px 130px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 44px;
+  background: linear-gradient(111deg, #fbed96 0%, #abecd6 100%);
+  box-shadow: 0px 23px 30px 0px rgba(171, 236, 214, 0.2), 0px 4px 12px 0px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    color: #111827;
+    margin: 0;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -2.64px;
+  }
+  p {
+    position: relative;
+    margin-top: 0;
+    color: #111827;
+    text-align: center;
+
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 118.6%;
+  }
+  &__buttons {
+    display: flex;
+    gap: 50px;
+
+    &__contact {
+      padding: 8px 60px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 32px;
+      background: #111827;
+      text-decoration: none;
+      color: #fff;
+
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border: 0;
+      cursor: pointer;
+    }
+    &__download {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      gap: 4px;
+      color: #111827;
+
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .introduce {
+    padding: 24px;
+
+    p {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 32px;
+    }
+
+    &__buttons {
+      gap: 16px;
+      &__contact {
+        padding: 8px 26px;
+        font-size: 14px;
+      }
+      &__download {
+        font-size: 14px;
+      }
+    }
+  }
+}

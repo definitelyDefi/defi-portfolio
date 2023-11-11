@@ -47,12 +47,29 @@ export function ProjectsCarousel(props: CarouselProps) {
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
-        slidesPerView={3}
-        spaceBetween={0}
+        slidesPerView={1}
+        spaceBetween={20}
         centeredSlides={false}
         navigation={{
           nextEl: ".arrowRight",
           prevEl: ".arrowLeft",
+        }}
+        breakpoints={{
+          400: {
+            spaceBetween: 20,
+          },
+          500: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
         }}
         pagination={{
           clickable: true,
@@ -74,18 +91,20 @@ export function ProjectsCarousel(props: CarouselProps) {
                   ))}
                 </p>
 
-                <div>
-                  <Image
-                    style={{
-                      border: `23px solid ${item.color}`,
-                      borderRadius: "18px",
-                    }}
-                    src={item.preview}
-                    alt="image"
-                    width={393}
-                    height={212}
-                  />
-                </div>
+                <Image
+                  style={{
+                    border: `23px solid ${item.color}`,
+                    borderRadius: "18px",
+                  }}
+                  className={classes.carousel__body_image}
+                  src={item.preview}
+                  alt="image"
+                  // sizes="(max-width: 500px) 200px, (max-width: 1200px) 393px, 212px, (max-width : 1900px) 393px"
+                  width={393}
+                  layout="responsive"
+                  height={212}
+                />
+
                 <div className={classes.carousel__body_links}>
                   <Link href={item.links.github}>
                     Github <Github />
